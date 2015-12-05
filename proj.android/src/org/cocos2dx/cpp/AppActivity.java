@@ -28,5 +28,106 @@ package org.cocos2dx.cpp;
 
 import org.cocos2dx.lib.Cocos2dxActivity;
 
-public class AppActivity extends Cocos2dxActivity {
+import com.everyplay.Everyplay.Everyplay;
+import com.everyplay.Everyplay.IEveryplayListener;
+
+import android.os.Bundle;
+
+public class AppActivity extends Cocos2dxActivity implements IEveryplayListener {
+	private static final String TAG = "EveryplayRecord";
+	private static String CLIENT_ID = "f77b511414beb1ea7d97762cdc5849e2d2dd27d1";
+	private static String CLIENT_SECRET = "2260808cef426ac09037a6d69f4d073e67b380a9";
+	private static String REDIRECT_URI = "https://m.everyplay.com/auth";
+
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setup();
+	}
+
+	public void setup() {
+		Everyplay.configureEveryplay(CLIENT_ID, CLIENT_SECRET, REDIRECT_URI);
+		Everyplay.initEveryplay(this, this);
+
+		new Thread(new Runnable(){
+	        @Override
+	        public void run()
+	        {
+	            try
+	            {
+	                Thread.sleep(20000);
+	                Everyplay.startRecording();
+	                Thread.sleep(10000);
+	                Everyplay.stopRecording();
+	                Everyplay.playLastRecording();
+	            }
+	            catch( InterruptedException e )
+	            {
+	                e.printStackTrace();
+	            }
+	        }
+	    }).start();
+	}
+	
+	@Override
+	public void onEveryplayReadyForRecording(int enabled) {
+	}
+
+	@Override
+	public void onEveryplayRecordingStarted() {
+	}
+
+	@Override
+	public void onEveryplayRecordingStopped() {
+	}
+
+	protected void onPause() {
+		super.onPause();
+	}
+
+	@Override
+	protected void onResume() {
+		super.onResume();
+	}
+
+	@Override
+	public void onEveryplayHidden() {
+	}
+
+	@Override
+	public void onEveryplayFaceCamSessionStarted() {
+	}
+
+	@Override
+	public void onEveryplayFaceCamRecordingPermission(int granted) {
+	}
+
+	@Override
+	public void onEveryplayShown() {
+	}
+
+	@Override
+	public void onEveryplayFaceCamSessionStopped() {
+	}
+
+	@Override
+	public void onEveryplayUploadDidStart(int videoId) {
+	}
+
+	@Override
+	public void onEveryplayUploadDidProgress(int videoId, double progress) {
+	}
+
+	@Override
+	public void onEveryplayUploadDidComplete(int videoId) {
+	}
+
+	@Override
+	public void onEveryplayThumbnailReadyAtTextureId(int textureId,
+			int portraitMode) {
+	}
+
+	@Override
+	public void onEveryplayAccountDidChange() {
+	}
 }
