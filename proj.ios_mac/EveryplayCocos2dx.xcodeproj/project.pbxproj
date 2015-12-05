@@ -62,6 +62,17 @@
 		8262943E1AAF051F00CB7CF7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8262943D1AAF051F00CB7CF7 /* Security.framework */; };
 		844AFFC71C12DEC5006AFFDD /* Everyplay.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 844AFFC51C12DEC5006AFFDD /* Everyplay.bundle */; };
 		844AFFC81C12DEC5006AFFDD /* Everyplay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844AFFC61C12DEC5006AFFDD /* Everyplay.framework */; };
+		844AFFCA1C12E03E006AFFDD /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844AFFC91C12E03E006AFFDD /* AdSupport.framework */; };
+		844AFFCC1C12E049006AFFDD /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844AFFCB1C12E049006AFFDD /* AssetsLibrary.framework */; };
+		844AFFCE1C12E051006AFFDD /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844AFFCD1C12E051006AFFDD /* CoreImage.framework */; };
+		844AFFD01C12E05B006AFFDD /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844AFFCF1C12E05B006AFFDD /* CoreMedia.framework */; };
+		844AFFD21C12E067006AFFDD /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844AFFD11C12E067006AFFDD /* CoreVideo.framework */; };
+		844AFFD41C12E071006AFFDD /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844AFFD31C12E071006AFFDD /* MessageUI.framework */; };
+		844AFFD61C12E07B006AFFDD /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844AFFD51C12E07B006AFFDD /* MobileCoreServices.framework */; };
+		844AFFD81C12E085006AFFDD /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844AFFD71C12E085006AFFDD /* Social.framework */; };
+		844AFFDA1C12E08E006AFFDD /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844AFFD91C12E08E006AFFDD /* StoreKit.framework */; };
+		844AFFDC1C12E09B006AFFDD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844AFFDB1C12E09B006AFFDD /* SystemConfiguration.framework */; };
+		844AFFDE1C12E0A4006AFFDD /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844AFFDD1C12E0A4006AFFDD /* Twitter.framework */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
@@ -158,6 +169,17 @@
 		8262943D1AAF051F00CB7CF7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		844AFFC51C12DEC5006AFFDD /* Everyplay.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Everyplay.bundle; path = Frameworks/Everyplay/Everyplay.bundle; sourceTree = "<group>"; };
 		844AFFC61C12DEC5006AFFDD /* Everyplay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Everyplay.framework; path = Frameworks/Everyplay/Everyplay.framework; sourceTree = "<group>"; };
+		844AFFC91C12E03E006AFFDD /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.1.sdk/System/Library/Frameworks/AdSupport.framework; sourceTree = DEVELOPER_DIR; };
+		844AFFCB1C12E049006AFFDD /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.1.sdk/System/Library/Frameworks/AssetsLibrary.framework; sourceTree = DEVELOPER_DIR; };
+		844AFFCD1C12E051006AFFDD /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.1.sdk/System/Library/Frameworks/CoreImage.framework; sourceTree = DEVELOPER_DIR; };
+		844AFFCF1C12E05B006AFFDD /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.1.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = DEVELOPER_DIR; };
+		844AFFD11C12E067006AFFDD /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.1.sdk/System/Library/Frameworks/CoreVideo.framework; sourceTree = DEVELOPER_DIR; };
+		844AFFD31C12E071006AFFDD /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.1.sdk/System/Library/Frameworks/MessageUI.framework; sourceTree = DEVELOPER_DIR; };
+		844AFFD51C12E07B006AFFDD /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.1.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		844AFFD71C12E085006AFFDD /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.1.sdk/System/Library/Frameworks/Social.framework; sourceTree = DEVELOPER_DIR; };
+		844AFFD91C12E08E006AFFDD /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.1.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
+		844AFFDB1C12E09B006AFFDD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.1.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		844AFFDD1C12E0A4006AFFDD /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.1.sdk/System/Library/Frameworks/Twitter.framework; sourceTree = DEVELOPER_DIR; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -174,6 +196,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				844AFFDE1C12E0A4006AFFDD /* Twitter.framework in Frameworks */,
+				844AFFDC1C12E09B006AFFDD /* SystemConfiguration.framework in Frameworks */,
+				844AFFDA1C12E08E006AFFDD /* StoreKit.framework in Frameworks */,
+				844AFFD81C12E085006AFFDD /* Social.framework in Frameworks */,
+				844AFFD61C12E07B006AFFDD /* MobileCoreServices.framework in Frameworks */,
+				844AFFD41C12E071006AFFDD /* MessageUI.framework in Frameworks */,
+				844AFFD21C12E067006AFFDD /* CoreVideo.framework in Frameworks */,
+				844AFFD01C12E05B006AFFDD /* CoreMedia.framework in Frameworks */,
+				844AFFCE1C12E051006AFFDD /* CoreImage.framework in Frameworks */,
+				844AFFCC1C12E049006AFFDD /* AssetsLibrary.framework in Frameworks */,
+				844AFFCA1C12E03E006AFFDD /* AdSupport.framework in Frameworks */,
 				ED545A7C1B68A1F400C3958E /* libiconv.dylib in Frameworks */,
 				52B47A471A53D09C004E4C60 /* Security.framework in Frameworks */,
 				1AC6FB30180E99EB004C840B /* libcocos2d iOS.a in Frameworks */,
@@ -263,6 +296,17 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				844AFFDD1C12E0A4006AFFDD /* Twitter.framework */,
+				844AFFDB1C12E09B006AFFDD /* SystemConfiguration.framework */,
+				844AFFD91C12E08E006AFFDD /* StoreKit.framework */,
+				844AFFD71C12E085006AFFDD /* Social.framework */,
+				844AFFD51C12E07B006AFFDD /* MobileCoreServices.framework */,
+				844AFFD31C12E071006AFFDD /* MessageUI.framework */,
+				844AFFD11C12E067006AFFDD /* CoreVideo.framework */,
+				844AFFCF1C12E05B006AFFDD /* CoreMedia.framework */,
+				844AFFCD1C12E051006AFFDD /* CoreImage.framework */,
+				844AFFCB1C12E049006AFFDD /* AssetsLibrary.framework */,
+				844AFFC91C12E03E006AFFDD /* AdSupport.framework */,
 				844AFFC51C12DEC5006AFFDD /* Everyplay.bundle */,
 				844AFFC61C12DEC5006AFFDD /* Everyplay.framework */,
 				ED545A7D1B68A1FA00C3958E /* libiconv.dylib */,
