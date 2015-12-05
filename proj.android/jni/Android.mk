@@ -1,5 +1,8 @@
 LOCAL_PATH := $(call my-dir)
 
+# add
+APP_ABI := armeabi-v7a x86
+
 include $(CLEAR_VARS)
 
 $(call import-add-path,$(LOCAL_PATH)/../../cocos2d)
