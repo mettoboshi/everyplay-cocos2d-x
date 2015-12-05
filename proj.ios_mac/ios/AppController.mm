@@ -86,9 +86,30 @@ static AppDelegate s_sharedApplication;
 
     app->run();
 
+    [Everyplay setClientId:@"f77b511414beb1ea7d97762cdc5849e2d2dd27d1" clientSecret:@"2260808cef426ac09037a6d69f4d073e67b380a9" redirectURI:@"https://m.everyplay.com/auth"];
+    [Everyplay initWithDelegate:self andParentViewController:_viewController];
+    [[[Everyplay sharedInstance] capture] autoRecordForSeconds:5 withDelay:1];
+
     return YES;
 }
 
+- (void)everyplayShown
+{
+    NSLog(@"everyplayshown");
+    cocos2d::Director::getInstance()->pause();
+}
+
+- (void)everyplayHidden
+{
+    NSLog(@"everyplayHidden");
+    cocos2d::Director::getInstance()->resume();
+}
+
+- (void)everyplayRecordingStopped
+{
+    NSLog(@"everyplayRecordingStopped");
+    [[Everyplay sharedInstance] playLastRecording];
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     /*

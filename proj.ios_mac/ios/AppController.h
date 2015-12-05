@@ -1,8 +1,10 @@
 #import <UIKit/UIKit.h>
+#import <Everyplay/Everyplay.h> // add
 
 @class RootViewController;
 
-@interface AppController : NSObject <UIApplicationDelegate> {
+// add EveryplayDelegate
+@interface AppController : NSObject <EveryplayDelegate, UIApplicationDelegate> {
     UIWindow *window;
 }
 
